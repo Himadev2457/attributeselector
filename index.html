@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{
+      height: 40vh;
+      width: 40vh;
+      border-radius: 30px;
+    }
+    [for="bird1"]{
+     border: 2px solid palevioletred;
+     padding: 10px;
+     background-color: palevioletred;
+    }
+    [value~="bird2"]{
+     border: 2px solid red;
+     padding: 10px;
+     background-color: red;
+    }
+    [name|="bird3"]{
+     border: 2px solid blue;
+     padding: 10px;
+     background-color: blue;
+    }
+    [type^="bi"]{
+     border: 2px solid darkcyan;
+     padding: 10px;
+     background-color: darkcyan;
+    }
+    [max$="d5"]{
+     border: 2px solid crimson;
+     padding: 10px;
+     background-color: crimson;
+    }
+    [min*="rd"]{
+     border: 2px solid burlywood;
+     padding: 10px;
+     background-color: burlywood; 
+    }
+  </style>
+</head>
+<body>
+  <center>
+  <table>
+    <tr>
+      <td><img for="bird1" src="../html/assets/images/bird1.jpg"></td>
+      <td><img value="bird2" src="../html/assets/images/bird2.avif"></td>
+      <td><img name="bird3-image"src="../html/assets/images/bird3.jpg"></td>
+    </tr>
+    <tr>
+    <td><img type="bird4" src="../html/assets/images/bird4.jpg"></td>
+    <td><img max="bird5" src="../html/assets/images/bird5.jpg"></td>
+    <td><img min="bird6" src="../html/assets/images/bird6.jpg"></td>
+  </tr>
+  </table>
+</center>
+</body>
+</html>
